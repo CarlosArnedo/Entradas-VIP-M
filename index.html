@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        function funcion_mensaje() {
+          var nom = document.getElementById("name").value;
+          var apellido_1 = document.getElementById("apellido_1").value;
+          var direccion = document.getElementById("direccion").value;
+          var correo = document.getElementById("correo").value;
+          var tel = document.getElementById("tel").value;
+          var tarjeta = document.getElementById("tarjeta").value;
+          alert ("Se ha realizado el pago correctamente y la entrada se le ha enviado a su correo electronico, en caso de no recibir nada por favor contacte con nuestro equipo en el enlace de abajo.") 
+        }
+        
+        </script>
+
+<h1 id="titulo"> Compra de entradas VIP para el partido Valencia CF vs Real Madrid CF 150€</h1> <img src="partido.png" alt="Valencia CF vs Real Madrid CF">
+<br>
+Introduce tu nombre:  <input type="text" id="name">
+Introduce tu apellido: <input type="text" id="apellido_1">
+<br>
+Dirección de facturación:  <input type="text" id="direccion">
+<br>
+Correo electronico:  <input type="text" id="correo">
+<br>
+Número de telefono:  <input type="text" id="tel">
+<br>
+Nº de cuenta o tarjeta:  <input type="text" id="tarjeta" onblur="funcion_mensaje()">
+<br>
+<a href="">Contacto</a>
+</body>
+</html>
